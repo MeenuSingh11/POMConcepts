@@ -31,69 +31,18 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Freecrm Test</td><td class="numi">8</td><td class="numi">8</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">151.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">45.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Freecrm Test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">com.crm.qa.testcases.HomePageTest</td><td><a href="#m1"><b>verifyContactsLinkTest</b>  </a></td><td class="numi">1</td><td>1549214134746</td><td class="numi">10073</td></tr>
-<tr><th colspan="4">Freecrm Test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="3">com.crm.qa.testcases.LoginPageTest</td><td><a href="#m2"><b>verifyLoginPgaeTitleTest</b>  </a></td><td class="numi">1</td><td>1549214062994</td><td class="numi">29</td></tr><tr class="passedodd"><td><a href="#m3"><b>verifyCRMLogoImageTest</b>  </a></td><td class="numi">1</td><td>1549214070249</td><td class="numi">110</td></tr><tr class="passedodd"><td><a href="#m4"><b>verifyLoginTest</b>  </a></td><td class="numi">1</td><td>1549214077864</td><td class="numi">9386</td></tr>
-<tr class="passedeven"><td rowspan="2">com.crm.qa.testcases.HomePageTest</td><td><a href="#m5"><b>verifyHomePageTitleTest</b>  </a></td><td class="numi">1</td><td>1549214103475</td><td class="numi">13</td></tr><tr class="passedeven"><td><a href="#m6"><b>verifyUserNameTest</b>  </a></td><td class="numi">1</td><td>1549214119720</td><td class="numi">119</td></tr>
-<tr class="passedodd"><td rowspan="3">com.crm.qa.testcases.ContactsPageTest</td><td><a href="#m7"><b>verifyContactPageLabelTest</b>  </a></td><td class="numi">1</td><td>1549214162158</td><td class="numi">45</td></tr><tr class="passedodd"><td><a href="#m8"><b>verifySelectContactTest</b>  </a></td><td class="numi">1</td><td>1549214183563</td><td class="numi">5117</td></tr><tr class="passedodd"><td><a href="#m9"><b>verifyMultipleContactsTest</b>  </a></td><td class="numi">1</td><td>1549214203912</td><td class="numi">240</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">com.crm.qa.testcases.ContactsPageTest</td><td><a href="#m1"><b>verifyContactPageLabelTest</b>  </a></td><td class="numi">1</td><td>1549215413390</td><td class="numi">45</td></tr><tr class="passedodd"><td><a href="#m2"><b>verifySelectContactTest</b>  </a></td><td class="numi">1</td><td>1549215428215</td><td class="numi">98</td></tr><tr class="passedodd"><td><a href="#m3"><b>verifyMultipleContactsTest</b>  </a></td><td class="numi">1</td><td>1549215442714</td><td class="numi">193</td></tr>
 </table>
-<h1>Freecrm Test</h1>
-<h2 id="m1">com.crm.qa.testcases.HomePageTest:verifyContactsLinkTest</h2>
-<div style="padding-left:3em">
-<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;Contacts&apos;]&quot;}
-  (Session info: chrome=71.0.3578.98)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-0QPIVDQ4&apos;, ip: &apos;192.168.178.26&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\meenu\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55612}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 40d4615c6eec2dd533c2f8edcc62c9fe
-*** Element info: {Using=xpath, value=//a[@title=&apos;Contacts&apos;]}</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-<br/>at com.sun.proxy.$Proxy9.click(Unknown Source)
-<br/>at com.crm.qa.pages.HomePage.clickOnContactLink(HomePage.java:36)
-<br/>at com.crm.qa.testcases.HomePageTest.verifyContactsLinkTest(HomePageTest.java:51)
-<br/>25 lines not shown
-</div>
+<h1>Default test</h1>
+<h2 id="m1">com.crm.qa.testcases.ContactsPageTest:verifyContactPageLabelTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.crm.qa.testcases.ContactsPageTest:verifyContactPageLabelTest</h2>
+<h2 id="m2">com.crm.qa.testcases.ContactsPageTest:verifyMultipleContactsTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">com.crm.qa.testcases.LoginPageTest:verifyCRMLogoImageTest</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">com.crm.qa.testcases.ContactsPageTest:verifyMultipleContactsTest</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">com.crm.qa.testcases.ContactsPageTest:verifySelectContactTest</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">com.crm.qa.testcases.HomePageTest:verifyHomePageTitleTest</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m7">com.crm.qa.testcases.LoginPageTest:verifyLoginTest</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m8">com.crm.qa.testcases.HomePageTest:verifyUserNameTest</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m9">com.crm.qa.testcases.LoginPageTest:verifyLoginPgaeTitleTest</h2>
+<h2 id="m3">com.crm.qa.testcases.ContactsPageTest:verifySelectContactTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

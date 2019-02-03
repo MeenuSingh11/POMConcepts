@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [ free crm Test ]">
-  <test name="Freecrm Test(failed)">
+  <test name="Freecrm Test classes(failed)">
     <classes>
       <class name="com.crm.qa.testcases.ContactsPageTest">
         <methods>
@@ -23,5 +23,5 @@
         </methods>
       </class> <!-- com.crm.qa.testcases.HomePageTest -->
     </classes>
-  </test> <!-- Freecrm Test(failed) -->
+  </test> <!-- Freecrm Test classes(failed) -->
 </suite> <!-- Failed suite [ free crm Test ] -->
