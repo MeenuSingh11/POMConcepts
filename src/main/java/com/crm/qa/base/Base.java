@@ -21,7 +21,7 @@ public class Base {
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
-					"C:\\Automation\\Projects\\POMConcepts\\src\\main\\java\\com\\crm\\qa\\config\\config.properties");
+					"/Users/meenu.singh/Work/POM-Source/src/main/java/com/crm/qa/config/config.properties");
 			prop.load(ip);
 
 		} catch (FileNotFoundException e) {
@@ -38,7 +38,7 @@ public class Base {
 
 		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
-					"C:\\Automation\\Softwares\\chromedriver_win32\\chromedriver.exe");
+               System.getProperty("user.dir") + "/chromedriver");
 			driver = new ChromeDriver();
 		}
 
