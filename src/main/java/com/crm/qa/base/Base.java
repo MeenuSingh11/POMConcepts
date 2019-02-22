@@ -1,15 +1,14 @@
 package com.crm.qa.base;
 
+import com.crm.qa.util.TestUtil;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import com.crm.qa.util.TestUtil;
 
 public class Base {
 
@@ -21,7 +20,7 @@ public class Base {
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
-					"/Users/meenu.singh/Work/POM-Source/src/main/java/com/crm/qa/config/config.properties");
+					"/Users/meenu.singh/Work/POM_New/src/main/java/com/crm/qa/config/config.properties");
 			prop.load(ip);
 
 		} catch (FileNotFoundException e) {
@@ -40,6 +39,7 @@ public class Base {
 			System.setProperty("webdriver.chrome.driver",
                System.getProperty("user.dir") + "/chromedriver");
 			driver = new ChromeDriver();
+			System.out.println("my name is nothing");
 		}
 
 		driver.manage().window().maximize();
