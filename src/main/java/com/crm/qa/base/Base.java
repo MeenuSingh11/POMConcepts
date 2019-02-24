@@ -12,40 +12,41 @@ import java.util.concurrent.TimeUnit;
 
 public class Base {
 
-	public static Properties prop;
-	public static WebDriver driver;
 
-	public Base() {
+    public static Properties prop;
+    public static WebDriver driver;
 
-		try {
-			prop = new Properties();
-			FileInputStream ip = new FileInputStream(
-					"/Users/meenu.singh/Work/POM_New/src/main/java/com/crm/qa/config/config.properties");
-			prop.load(ip);
+    public Base() {
 
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+        try {
+            prop = new Properties();
+            FileInputStream ip = new FileInputStream(
+                    "/Users/meenu.singh/Work/POM_New/src/main/java/com/crm/qa/config/config.properties");
+            prop.load(ip);
 
-	}
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-	public static void initialization() {
+    }
 
-		String browserName = prop.getProperty("browser");
+    public static void initialization() {
 
-		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver",
-               System.getProperty("user.dir") + "/chromedriver");
-			driver = new ChromeDriver();
-			System.out.println("my name is nothing");
-		}
+        String browserName = prop.getProperty("browser");
 
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMOUT, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		driver.get(prop.getProperty("url"));
-	}
+        if (browserName.equals("chrome")) {
+            System.setProperty("webdriver.chrome.driver",
+                    System.getProperty("user.dir") + "/chromedriver");
+            driver = new ChromeDriver();
+            System.out.println("my name is nothing");
+        }
+
+        driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
+        driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMOUT, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+        driver.get(prop.getProperty("url"));
+    }
 }

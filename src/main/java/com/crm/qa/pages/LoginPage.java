@@ -20,19 +20,21 @@ public class LoginPage extends Base {
 	@FindBy(linkText = "Sign Up")
 	WebElement signUp;
 
-	@FindBy(xpath = "//img[@class ='img-responsive' and @alt='free crm logo']")
-	WebElement crmLogo;
+	@FindBy(xpath = "//img[@class='img-responsive' and @src='https://classic.crmpro.com/img/logo@2x.png']")
+	WebElement crmProLogo;
 
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
 	}
+
+	/* All the method in login page*/
 
 	public String validateLoginPageTitle() {
 		return driver.getTitle();
 	}
 
 	public boolean validateCRMImage() {
-		return crmLogo.isDisplayed();
+		return crmProLogo.isDisplayed();
 
 	}
 
