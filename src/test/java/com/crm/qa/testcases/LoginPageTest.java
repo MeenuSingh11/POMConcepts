@@ -22,7 +22,6 @@ public class LoginPageTest extends Base {
 	public void setUp() {
 		initialization();
 		loginPage = new LoginPage();
-
 	}
 
 	@Test(priority = 1)

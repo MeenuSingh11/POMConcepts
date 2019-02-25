@@ -13,34 +13,27 @@ import java.util.concurrent.TimeUnit;
 public class Base {
 
 
-    public static Properties prop;
-    public static WebDriver driver;
+    protected static Properties prop;
+    protected static WebDriver driver;
 
     public Base() {
-
         try {
             prop = new Properties();
-            FileInputStream ip = new FileInputStream(
-                    "/Users/meenu.singh/Work/POM_New/src/main/java/com/crm/qa/config/config.properties");
+            FileInputStream ip = new FileInputStream("/Users/meenu.singh/Work/POM_New/src/main/java/com/crm/qa/config/config.properties");
             prop.load(ip);
-
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
-    public static void initialization() {
-
+    protected void initialization() {
         String browserName = prop.getProperty("browser");
-
         if (browserName.equals("chrome")) {
             System.setProperty("webdriver.chrome.driver",
                     System.getProperty("user.dir") + "/chromedriver");
             driver = new ChromeDriver();
-            System.out.println("my name is nothing");
         }
 
         driver.manage().window().maximize();

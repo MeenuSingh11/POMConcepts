@@ -1,12 +1,12 @@
 package com.crm.qa.pages;
 
+import com.crm.qa.base.Base;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.crm.qa.base.Base;
-
 public class HomePage extends Base {
+
 
 	@FindBy(xpath = "//td[contains(text(),'User: Meenu Singh')]")
 	WebElement userNameLabel;
