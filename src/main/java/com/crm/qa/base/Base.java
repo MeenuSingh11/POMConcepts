@@ -19,7 +19,8 @@ public class Base {
     public Base() {
         try {
             prop = new Properties();
-            FileInputStream ip = new FileInputStream("/Users/meenu.singh/Work/POM_New/src/main/java/com/crm/qa/config/config.properties");
+            FileInputStream ip = new FileInputStream("/Users/meenu.singh/Work/POM_New/src/main/" +
+                    "java/com/crm/qa/config/config.properties");
             prop.load(ip);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -28,7 +29,7 @@ public class Base {
         }
     }
 
-    protected void initialization() {
+    protected static void initialization() {
         String browserName = prop.getProperty("browser");
         if (browserName.equals("chrome")) {
             System.setProperty("webdriver.chrome.driver",
